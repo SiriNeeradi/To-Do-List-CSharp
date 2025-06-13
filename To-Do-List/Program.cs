@@ -11,6 +11,14 @@
         taskCount++;
     }
 
+    public static void ViewTasks()
+    {
+        for (int i = 0; i < taskCount; i++)
+        {
+            Console.WriteLine((i + 1) + ". " + tasks[i]);
+        }
+    }
+
     public static void Main(string[] args)
     {
         bool running = true;
@@ -29,6 +37,9 @@
                     AddTask();
                     break;
                 case "2":
+                    ViewTasks();
+                    break;
+                case "3":
                     running = false;
                     break;
                 default:
