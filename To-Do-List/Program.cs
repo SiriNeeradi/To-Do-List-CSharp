@@ -27,8 +27,8 @@
         {
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("1. Add a task");
-            Console.WriteLine("2. Exit");
-
+            Console.WriteLine("2. View Task");
+            Console.WriteLine("3. Exit");
             string choice = Console.ReadLine();
 
             switch (choice)
